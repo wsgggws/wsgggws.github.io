@@ -3,14 +3,14 @@ title: "Introduction"
 date: 2023-03-11T11:30:03+00:00
 # weight: 1
 aliases: ["/about"]
-tags: ["introduction"]
+tags: ["Introduction"]
 author: "Navy"
 showToc: true
 TocOpen: false
 draft: false
 hidemeta: false
 comments: false
-description: "This is about me"
+description: ""
 canonicalURL: "https://canonical.url/to/page"
 disableHLJS: true # to disable highlightjs
 disableShare: false
@@ -35,7 +35,7 @@ editPost:
     appendFilePath: true # to append file path to Edit link
 ---
 
-My name is Navy.Tian, Nice to meet you.
+Hi, My name is Navy.Tian.
 
 GitHub: https://github.com/wsgggws
 

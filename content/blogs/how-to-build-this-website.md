@@ -9,7 +9,7 @@ TocOpen: false
 draft: false
 hidemeta: false
 comments: false
-description: "Depoly a static website to GitHub page by Hugo"
+description: ""
 canonicalURL: "https://canonical.url/to/page"
 disableHLJS: true # to disable highlightjs
 disableShare: false
@@ -33,6 +33,8 @@ editPost:
     Text: "Edit" # edit text
     appendFilePath: true # to append file path to Edit link
 ---
+
+Depoly this website to GitHub page by Hugo
 
 ## Prequiments
 

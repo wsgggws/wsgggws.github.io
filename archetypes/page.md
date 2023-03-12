@@ -3,14 +3,14 @@ title: "{{ replace .Name "-" " " | title }}"
 date: {{ .Date }}
 weight: 1
 aliases: ["/blogs"]
-tags: ["template"]
+tags: [""]
 author: "Navy"
 showToc: true
 TocOpen: false
 draft: false
 hidemeta: false
 comments: false
-description: "This is a template"
+description: ""
 canonicalURL: "https://canonical.url/to/page"
 disableHLJS: true # to disable highlightjs
 disableShare: false
