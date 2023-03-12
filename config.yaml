@@ -64,10 +64,12 @@ params:
     imageHeight: 120
     imageTitle: my image
     buttons:
-      - name: Blogs
-        url: blogs
       - name: Projects
         url: projects
+      - name: Blogs
+        url: blogs
+      - name: AnySays
+        url: anysays
 
   # home-info mode
   homeInfoParams:
@@ -108,18 +110,22 @@ menu:
       name: Tags
       url: /tags/
       weight: 10
-    - identifier: blogs
-      name: Blogs
-      url: /blogs/
-      weight: 20
     - identifier: projects
       name: Projects
       url: /projects/
+      weight: 20
+    - identifier: blogs
+      name: Blogs
+      url: /blogs/
       weight: 30
+    - identifier: anysays
+      name: AnySays
+      url: /anysays/
+      weight: 40
     - identifier: about
       name: About
       url: /about/
-      weight: 40
+      weight: 50
 pygmentsUseClasses: true
 markup:
   highlight:
