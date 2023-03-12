@@ -79,10 +79,8 @@ params:
   socialIcons:
     - name: github
       url: "https://github.com/wsgggws"
-    - name: bili
-      url: "https://bilibili.com/"
-    - name: stackoverflow
-      url: "https://stackoverflow.com"
+    - name: bilibili
+      url: "https://space.bilibili.com/472722204/"
 
   cover:
     hidden: true # hide everywhere but not in structured data
@@ -90,8 +88,8 @@ params:
     hiddenInSingle: true # hide on single page
 
   editPost:
-    URL: "https://github.com/wsgggws.github.io/content"
-    Text: "Suggest Changes" # edit text
+    URL: "https://github.com/wsgggws/wsgggws.github.io/blob/main/content"
+    Text: "Edit" # edit text
     appendFilePath: true # to append file path to Edit link
 
   # for search
