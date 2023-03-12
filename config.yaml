@@ -8,7 +8,6 @@ buildDrafts: false
 buildFuture: false
 buildExpired: false
 
-
 minify:
   disableXML: true
   minifyOutput: true
@@ -129,4 +128,4 @@ markup:
     # codeFences: true
     # guessSyntax: true
     # lineNos: true
-    style: monokai
+    # style: monokai
