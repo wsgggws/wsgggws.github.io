@@ -1,7 +1,7 @@
 ---
 title: "Learn English"
 date: 2023-03-11T11:30:03+00:00
-# weight: 1
+weight: 1
 aliases: ["/projects"]
 tags: ["English"]
 author: "Navy"
@@ -30,8 +30,8 @@ cover:
     relative: false # when using page bundles set this to true
     hidden: true # only hide on current single page
 editPost:
-    URL: "https://github.com/<path_to_repo>/content"
-    Text: "edit" # edit text
+    URL: "https://github.com/wsgggws/wsgggws.github.io/blob/main/content"
+    Text: "Edit" # edit text
     appendFilePath: true # to append file path to Edit link
 ---
 

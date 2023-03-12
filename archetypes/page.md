@@ -1,9 +1,9 @@
 ---
-title: "Learn Go"
-date: 2023-03-11T11:30:03+00:00
-# weight: 1
-aliases: ["/projects"]
-tags: ["Computer tech", "Go"]
+title: "xx"
+date: 2020-09-15T11:30:03+00:00
+weight: 1
+# aliases: ["/first"]
+tags: []
 author: "Navy"
 showToc: true
 TocOpen: false
@@ -34,8 +34,3 @@ editPost:
     Text: "Edit" # edit text
     appendFilePath: true # to append file path to Edit link
 ---
-
-There are some books I am reading about golang
-
-- Go by example
-- Go in action(recommand)
