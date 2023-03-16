@@ -1,5 +1,5 @@
 ---
-title: "How to build this website"
+title: "How To Build This Website"
 date: 2023-03-12T15:44:12+08:00
 aliases: ["/blogs"]
 tags: ["GitHub Page", "Hugo", "PaperMod"]

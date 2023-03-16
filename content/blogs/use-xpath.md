@@ -58,7 +58,7 @@ XPath(XML Path Language) 通过“路径表达式” 在 XML/HTML 文本中选�
 - 字符串判断 starts-with(), ends-with(), contains(), normalize-space(), ...
 - 字符串处理 substring-before(), substring-after(), concat(), ...
 
-## 其它
+## Others
 
 - 连接多个 Xpath |
 
@@ -72,7 +72,7 @@ XPath(XML Path Language) 通过“路径表达式” 在 XML/HTML 文本中选�
 4. 在 chrome 浏览器里调试 xpath 可以用 `$x(xpath_pattern)` 的方式，比如 `$x("//strong[contains(text(), 'Order #')]/parent::td/text()[re:match(., 'W\\d{14}')]")`
 5. 我们在 expression 里支持了拓展正则表达式，可以用 `re:match(text, pattern)` 的方式来做正则匹配，但是这个运算不能在浏览器里面执行
 
-## XPATH 案例分析
+## XPath examples
 
 ```html
 <div>
@@ -219,7 +219,7 @@ $x("concat(//table/tbody[count(tr)=7]/tr/td[starts-with(., 'starts-with')]/prece
 //div/table/tbody/tr[contains(preceding-sibling::comment(), 'special tr start') and contains(following-sibling::comment(), 'special tr end')]
 ```
 
-## exam 1
+## Exam-1
 
 ```html
 <!--  如何得到  merchandise Total 的价格， 当 merchandise Total 并不总是出现在第一列! -->
@@ -278,7 +278,7 @@ $x("concat(//table/tbody[count(tr)=7]/tr/td[starts-with(., 'starts-with')]/prece
 # 4. 然后根据第三步的节点，找出我们想要的文案，也就是 /td/table[2]//tr[ position() = count(/td/table[1]//tr[.//text()[contains(., 'Merchandise')]]/preceding-sibling::tr)+1 ]/td/text()
 ```
 
-## exam 2:
+## Exam-2
 
 ```html
 <!--  如何获得所有地址? `ABCDABCD` `ABCDABCD` `ABCDABCD` 为地址 -->
