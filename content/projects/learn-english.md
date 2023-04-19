@@ -35,4 +35,6 @@ editPost:
     appendFilePath: true # to append file path to Edit link
 ---
 
-[一 英语基本句型](../../english/英语基本句型/)
+[一 基本句型](../../english/基本句型/)
+
+[二 动词时态](../../english/动词时态/)
