@@ -3,7 +3,7 @@ title: "Learn English"
 date: 2023-03-11T11:30:03+00:00
 weight: 1
 aliases: ["/projects"]
-tags: ["English"]
+tags: ["english"]
 author: "Navy"
 showToc: true
 TocOpen: false
@@ -35,7 +35,4 @@ editPost:
     appendFilePath: true # to append file path to Edit link
 ---
 
-There are some books I am reading
-
-- Americal Textbook Reading (including videos)
-- 英语魔法师之语法俱乐部
+[一 英语基本句型](../../english/英语基本句型/)
