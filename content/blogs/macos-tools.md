@@ -38,20 +38,20 @@ editPost:
 |      软件       | 作用           |
 | :-------------: | :------------- |
 |     Chrome      | 搜索与网页浏览 |
-|     Alfred      | 效率神器       |
+|     Raycast     | 效率神器       |
 |     iTerm2      | 终端           |
-|      Moom       | 窗口管理       |
 |    Karabiner    | 改键           |
+|     Neovim      | 文本编辑       |
+|     Notion      | 笔记           |
+|  Sublime Text   | 文本编辑器     |
 |   CheatSheet    | 快捷键查询     |
 |    Keycastr     | 按键回显       |
 |      Keka       | 解压缩         |
 |      Dash       | 离线文档       |
-|     Notion      | 笔记           |
 |     Postman     | Web API 请求   |
 |     LICEcap     | 录制 Gif       |
 |   AppCleaner    | 软件卸载       |
 |   Dictionary    | 字典           |
-|  Sublime Text   | 文本编辑器     |
 |    Snipaste     | 截图           |
 |      Zoom       | 视频会议       |
 |       Omi       | 视频录制       |
@@ -59,8 +59,5 @@ editPost:
 |  NeteaseMusit   | 音乐播放       |
 | KeepingYouAwake | 防锁屏         |
 |     ClashX      | 科学上网       |
-|  Neovim/Emacs   | 文本编辑       |
 |       fzf       | 模糊搜索文件   |
 |       bat       | cat 替代者     |
-
-你还可以删除 MacOS [自带的英文输入法](https://www.zhihu.com/question/21459701), 只安装一个输入法，并使用 Shift 进行中英文切换
