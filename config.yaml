@@ -58,14 +58,12 @@ params:
   profileMode:
     enabled: true # needs to be explicitly set
     title: "; )"
-    subtitle: "Let today better than before"
+    subtitle: "Not washing, No coding"
     imageUrl: "https://avatars.githubusercontent.com/u/20469245?s=400&u=231bcbf9c8e3298401c2bf97e443dbcfd15eb856&v=4"
     imageWidth: 120
     imageHeight: 120
     imageTitle: my image
     buttons:
-      - name: Projects
-        url: projects
       - name: Blogs
         url: blogs
       - name: AnySays
@@ -107,10 +105,6 @@ menu:
     - identifier: tags
       name: Tags
       url: /tags/
-      weight: 10
-    - identifier: projects
-      name: Projects
-      url: /projects/
       weight: 20
     - identifier: blogs
       name: Blogs
