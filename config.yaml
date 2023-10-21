@@ -1,5 +1,5 @@
 baseURL: "https://wsgggws.github.io/"
-title: 码码要洗手
+title: 码码洗手冇得空
 paginate: 5
 theme: PaperMod
 
@@ -14,7 +14,7 @@ minify:
 
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
-  title: "码码要洗手"
+  title: "码码洗手冇得空"
   description: ""
   keywords: [Blog, Portfolio, PaperMod]
   author: Navy
@@ -50,7 +50,7 @@ params:
     safari_pinned_tab: "<link / abs url>"
 
   label:
-    text: "码码要洗手"
+    text: "码码洗手冇得空"
     icon: /apple-touch-icon.png
     iconHeight: 35
 
@@ -59,7 +59,7 @@ params:
     enabled: true # needs to be explicitly set
     title: "; )"
     subtitle: "No washing, Not code"
-    imageUrl: "https://avatars.githubusercontent.com/u/20469245?s=400&u=231bcbf9c8e3298401c2bf97e443dbcfd15eb856&v=4"
+    imageUrl: "/images/website/Navy.jpeg"
     imageWidth: 120
     imageHeight: 120
     imageTitle: my image
