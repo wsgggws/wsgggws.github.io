@@ -40,33 +40,35 @@ editPost:
 
 ## 常用工具
 
-|      软件       | 作用           |
-| :-------------: | :------------- |
-|    Homebrew     | 软件包管理     |
-|     Chrome      | 搜索与网页浏览 |
-|     Raycast     | 效率神器       |
-|     iTerm2      | 终端           |
-|    Karabiner    | 改键           |
-|     Neovim      | 文本编辑       |
-|     Notion      | 笔记           |
-|  Sublime Text   | 文本编辑器     |
-|    Keycastr     | 按键回显       |
-|     Postman     | Web API 请求   |
-|     LICEcap     | 录制 Gif       |
-|   AppCleaner    | 软件卸载       |
-|   Dictionary    | 字典           |
-|    Snipaste     | 截图           |
-|      Zoom       | 视频会议       |
-|       Omi       | 视频录制       |
-|      IINA       | 视频播放       |
-|  NeteaseMusit   | 音乐播放       |
-| KeepingYouAwake | 防锁屏         |
-|     ClashX      | 科学上网       |
-|       fzf       | 模糊搜索文件   |
-|       bat       | cat 替代者     |
-|     AltTab      | 切换窗口       |
-|   Hidden Bar    | 隐藏菜单栏     |
-|    mitmproxy    | 抓包工具       |
+|      软件       | 作用              |
+| :-------------: | :---------------- |
+|    Homebrew     | 软件包管理        |
+|     Chrome      | 搜索与网页浏览    |
+|     Raycast     | 效率神器          |
+|     iTerm2      | 终端              |
+|    Karabiner    | 改键              |
+|     Neovim      | 文本编辑          |
+|     Notion      | 笔记              |
+|  Sublime Text   | 文本编辑器        |
+|    Keycastr     | 按键回显          |
+|     Postman     | Web API 请求      |
+|     LICEcap     | 录制 Gif          |
+|   AppCleaner    | 软件卸载          |
+|   Dictionary    | 字典              |
+|    Snipaste     | 截图              |
+|      Zoom       | 视频会议          |
+|       Omi       | 视频录制          |
+|      IINA       | 视频播放          |
+|  NeteaseMusit   | 音乐播放          |
+| KeepingYouAwake | 防锁屏            |
+|     ClashX      | 科学上网          |
+|       fzf       | 模糊搜索文件      |
+|       bat       | cat 替代者        |
+|     AltTab      | 切换窗口          |
+|   Hidden Bar    | 隐藏菜单栏        |
+|    mitmproxy    | 抓包工具          |
+|  Thor Launcher  | 快捷键直接打开App |
+| KeyboardHolder  | 设置App初始输入法 |
 
 ### [Homebrew](https://brew.sh/)
 

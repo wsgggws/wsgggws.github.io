@@ -1,5 +1,5 @@
 baseURL: "https://wsgggws.github.io/"
-title: 冇得空
+title: 码码冇得空
 paginate: 5
 theme: PaperMod
 
@@ -14,7 +14,7 @@ minify:
 
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
-  title: "冇得空"
+  title: "码码冇得空"
   description: ""
   keywords: [Blog, Portfolio, PaperMod]
   author: Navy
@@ -50,7 +50,7 @@ params:
     safari_pinned_tab: "<link / abs url>"
 
   label:
-    text: "冇得空"
+    text: "码码冇得空"
     icon: /apple-touch-icon.png
     iconHeight: 35
 
