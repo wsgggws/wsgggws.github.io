@@ -1,39 +1,7 @@
----
-title: "XPath 使用与技巧"
-date: 2023-03-16T12:50:18+08:00
-weight: 1
-aliases: ["/blogs"]
-tags: ["XPATH"]
-author: "Navy"
-showToc: true
-TocOpen: false
-draft: false
-hidemeta: false
-comments: false
-description: ""
-canonicalURL: "https://canonical.url/to/page"
-disableHLJS: true # to disable highlightjs
-disableShare: false
-disableHLJS: false
-hideSummary: false
-searchHidden: true
-ShowReadingTime: true
-ShowBreadCrumbs: true
-ShowPostNavLinks: true
-ShowWordCount: true
-ShowRssButtonInSectionTermList: true
-UseHugoToc: true
-cover:
-    image: "<image path/url>" # image path/url
-    alt: "<alt text>" # alt text
-    caption: "<text>" # display caption under cover
-    relative: false # when using page bundles set this to true
-    hidden: true # only hide on current single page
-editPost:
-    URL: "https://github.com/wsgggws/wsgggws.github.io/blob/main/content"
-    Text: "Edit" # edit text
-    appendFilePath: true # to append file path to Edit link
----
++++
+title = "XPath 使用与技巧"
+date = 2023-03-16T12:50:18+08:00
++++
 
 XPath(XML/HTML Path Language)通过“路径表达式” 在 XML/HTML 中选择节点。
 
@@ -124,7 +92,7 @@ XPath(XML/HTML Path Language)通过“路径表达式” 在 XML/HTML 中选择�
 
 7. 在遍历某些结点时，要明白它是一个引用，也就是说，你还是可以遍历到它的前后节点(following, preceding)，父节点(../)，甚至根结点(得以相对路径不断向上寻找)。
 
-8. 如果你使用的是 Python 语言，可以尝试下 parsel 这个库，它的链接是 https://parsel.readthedocs.io/en/latest/usage.html#learning-expression-languages ，而且它现在还支持 JMESPath，即对 JSON 类型数据选择与过滤，功能很是强大，还有些链接也很有启发，如 XPath cheatsheet: https://devhints.io/xpath 给了很多常用的案例，还有 XPath tips: https://www.zyte.com/blog/xpath-tips-from-the-web-scraping-trenches/ 给了些有用的经验，并且还能知道 >>> `Avoid using contains(.//text(), 'search text') in your XPath conditions.`, 这点非常有趣。
+8. 如果你使用的是 Python 语言，可以尝试下 parsel 这个库，它的链接是 <https://parsel.readthedocs.io/en/latest/usage.html#learning-expression-languages> ，而且它现在还支持 JMESPath，即对 JSON 类型数据选择与过滤，功能很是强大，还有些链接也很有启发，如 XPath cheatsheet: <https://devhints.io/xpath> 给了很多常用的案例，还有 XPath tips: <https://www.zyte.com/blog/xpath-tips-from-the-web-scraping-trenches/> 给了些有用的经验，并且还能知道 >>> `Avoid using contains(.//text(), 'search text') in your XPath conditions.`, 这点非常有趣。
 
 9. 如果是 XML 类型，需要声明 namespace，如 `//ns:div[@class='col-9 col-md-10']`，其中 ns 是 namespace 的简写，而且需要在代码中声明，如 `namespaces = {'ns': 'http://www.w3.org/1999/xhtml'}`，这样就可以使用了。
 
