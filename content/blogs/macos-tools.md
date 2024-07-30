@@ -88,8 +88,6 @@ Yes, I like it. more details you can see: [https://github.com/wsgggws/nvim](http
 ![fzf](/images/macos-tools/fzf.png)
 模糊搜索, 并与很多工具进行了集成，详情可以参考[官方文档](https://github.com/junegunn/fzf)。
 
-### [Hidden Bar](https://apps.apple.com/us/app/hidden-bar/id1452453066?mt=12)
-
 ### [mitmproxy](https://mitmproxy.org/)
 
 Charles, Fiddler 这些的替代品，值得拥有。
