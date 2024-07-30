@@ -3,6 +3,14 @@ languageCode = 'en-us'
 title = 'Blogs (码码冇得空)'
 theme = 'paper'
 
+[menu]
+
+  [[menu.main]]
+    identifier = "about"
+    name = "AboutMe"
+    url = "/about/"
+    weight = 10
+
 
 [params]
   # color style

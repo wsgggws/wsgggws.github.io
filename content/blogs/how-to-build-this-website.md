@@ -3,13 +3,15 @@ title = "How To Build This Website"
 date = 2023-03-12T15:44:12+08:00
 +++
 
-Depoly this website to GitHub page by Hugo
+- Write a Markdown file
+- Commit to GitHub
+- Automatically deploy to GitHub Pages by GitHub Actions
 
 ## prerequisites
 
 - Hugo
 - Git
-- GitHub
+- GitHub repo
 
 ```
 brew install git
@@ -62,15 +64,6 @@ git push -f -u origin main
 open https://wsgggws.github.io
 ```
 
-## Write blogs and auto deploy
+## references
 
-```
-hugo new posts blogs/xxx.md
-vim conten/blogs/xxx.md
-git add .
-git commit -m"Add a new post xxx"
-git push -f origin main
-
-# After GitHub action is done
-open https://wsgggws.github.io
-```
+- <https://gohugo.io/hosting-and-deployment/hosting-on-github/>

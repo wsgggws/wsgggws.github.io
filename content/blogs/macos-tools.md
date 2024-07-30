@@ -3,40 +3,43 @@ title = "MacOS Tools"
 date = 2023-03-17T13:00:51+08:00
 +++
 
+## 为什么
+
 以下是我常使用的 MacOS 工具(App)，我并会对部分 App 进行说明，希望能在效率上帮助到你。
-如果你有好的工具推荐，欢迎留言。
+如果你也有好的工具推荐，欢迎推荐。
 
 ## 常用工具
 
-|      软件       | 作用              |
-| :-------------: | :---------------- |
-|    Homebrew     | 软件包管理        |
-|     Chrome      | 搜索与网页浏览    |
-|     Raycast     | 效率神器          |
-|     iTerm2      | 终端              |
-|    Karabiner    | 改键              |
-|     Neovim      | 文本编辑          |
-|     Notion      | 笔记              |
-|  Sublime Text   | 文本编辑器        |
-|    Keycastr     | 按键回显          |
-|     Postman     | Web API 请求      |
-|     LICEcap     | 录制 Gif          |
-|   AppCleaner    | 软件卸载          |
-|   Dictionary    | 字典              |
-|    Snipaste     | 截图              |
-|      Zoom       | 视频会议          |
-|       Omi       | 视频录制          |
-|      IINA       | 视频播放          |
-|  NeteaseMusit   | 音乐播放          |
-| KeepingYouAwake | 防锁屏            |
-|     ClashX      | 科学上网          |
-|       fzf       | 模糊搜索文件      |
-|       bat       | cat 替代者        |
-|     AltTab      | 切换窗口          |
-|   Hidden Bar    | 隐藏菜单栏        |
-|    mitmproxy    | 抓包工具          |
-|  Thor Launcher  | 快捷键直接打开App |
-| KeyboardHolder  | 设置App初始输入法 |
+|      软件       | 作用           |
+| :-------------: | :------------- |
+|   清歌输入法    | 五笔输入       |
+|    Homebrew     | 软件包管理     |
+|     Chrome      | 搜索与网页浏览 |
+|     Raycast     | 效率神器       |
+|     iTerm2      | 终端           |
+|    Karabiner    | 改键           |
+|     Neovim      | 文本编辑       |
+|     Notion      | 笔记           |
+|  Sublime Text   | 文本编辑器     |
+|    Keycastr     | 按键回显       |
+|     Postman     | Web API 请求   |
+|     LICEcap     | 录制 Gif       |
+|   Pearcleaner   | 软件卸载       |
+|   Dictionary    | 字典           |
+|    Snipaste     | 截图           |
+|      Zoom       | 视频会议       |
+|       Omi       | 视频录制       |
+|      IINA       | 视频播放       |
+|  NeteaseMusit   | 音乐播放       |
+| KeepingYouAwake | 防锁屏         |
+|     ClashX      | 科学上网       |
+|       fzf       | 模糊搜索文件   |
+|       bat       | cat 替代者     |
+|    mitmproxy    | 抓包工具       |
+
+### 清歌输入法
+
+强烈建议删除 MacOS 自带的 ABC 输入法, 用清歌输入法，配置 shift 为中英文切换键，速度更快。
 
 ### [Homebrew](https://brew.sh/)
 
@@ -85,14 +88,7 @@ Yes, I like it. more details you can see: [https://github.com/wsgggws/nvim](http
 ![fzf](/images/macos-tools/fzf.png)
 模糊搜索, 并与很多工具进行了集成，详情可以参考[官方文档](https://github.com/junegunn/fzf)。
 
-### [AltTab](https://alt-tab-macos.netlify.app/)
-
-它的窗口要的键是 Option + Tab， 相比原生的 Command + Tab，它更加直观更易选择你想打开的 App。
-
 ### [Hidden Bar](https://apps.apple.com/us/app/hidden-bar/id1452453066?mt=12)
-
-![hidden-bar](/images/macos-tools/hidden-bar.png)
-对常用的显示，不常用的隐藏，这样有更好的屏幕空间体验。
 
 ### [mitmproxy](https://mitmproxy.org/)
 
