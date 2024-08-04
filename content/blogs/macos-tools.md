@@ -17,6 +17,7 @@ date = 2023-03-17T13:00:51+08:00
 |     Chrome      | 搜索与网页浏览 |
 |     Raycast     | 效率神器       |
 |     iTerm2      | 终端           |
+|     WezTerm     | 终端(更好定制) |
 |    Karabiner    | 改键           |
 |     Neovim      | 文本编辑       |
 |     Notion      | 笔记           |

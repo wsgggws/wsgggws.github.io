@@ -1,12 +1,14 @@
 +++
 title = "JEMSPath"
-date = 2024-07-31T10:50:18+08:00
+date = 2024-08-01T10:50:18+08:00
 +++
 
-JEMSPath(): Query language for JSON.
+JMESPath is a query language for JSON
 
-TODO
+相对于 `jq`，JMESPath 更轻量级。各种编程语言都有对应的封装实现，如 Python 的 `jmespath` 模块。 或者直接使用 parsel 模块，它对 jemspath 再一次进行了封装。
 
-## 参考
+## RTFM
 
-- [JMESPath Tutorial](https://jmespath.org/tutorial.html)
+- [JMESPath tutorial](https://jmespath.org/tutorial.html)
+- [JMESPath specification](https://jmespath.org/specification.html)
+- [parsel](https://parsel.readthedocs.io/en/latest/)
