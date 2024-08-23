@@ -5,7 +5,7 @@ date = 2024-07-31T10:50:18+08:00
 
 XPath(XML/HTML Path Language): Query language for XML/HTML.
 
-[本人在线操作 XPath 视频版点这里](https://www.bilibili.com/video/BV1Kd4y1R7Bt/)
+[视频解说点这里](https://www.bilibili.com/video/BV1Kd4y1R7Bt/)
 
 ## XPath 表达式构成
 
