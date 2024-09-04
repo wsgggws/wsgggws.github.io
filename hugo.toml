@@ -7,7 +7,7 @@ theme = 'paper'
 
   [[menu.main]]
     identifier = "about"
-    name = "AboutMe"
+    name = "About.Me"
     url = "/about/"
     weight = 10
 

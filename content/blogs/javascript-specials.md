@@ -1,5 +1,5 @@
 +++
-title = "Javascript 特性"
+title = "JavaScript 特性"
 date =  2024-08-05T21:13:46+08:00
 +++
 
