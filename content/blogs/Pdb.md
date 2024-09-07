@@ -20,7 +20,7 @@ date =  2024-09-06T08:44:25+08:00
 
 4. .pdbrc 文件 (自定义 pdb 的配置)
 
-```
+```python
 # 打印欢迎信息
 !import sys
 !print("Python version:", sys.version)
@@ -82,8 +82,8 @@ display sys.argv
    - p (print, 打印变量)
    - pp (pretty print, 打印变量, 格式化)
    - a (args, 打印函数参数)
-   - display \[expression] (在当前函数，当变量值被改变时，每次打印表达式的值, 不加参数显示所有 display 过的)
-   - undisplay \[expression] (取消显示该表达式的值，不加参数取消所有)
+   - display \[expression\] (在当前函数，当变量值被改变时，每次打印表达式的值, 不加参数显示所有 display 过的)
+   - undisplay \[expression\] (取消显示该表达式的值，不加参数取消所有)
    - l (list, 显示当前行附近的代码)
    - ll (long list, 显示当前函数的代码)
    - w (where, 显示当前代码调用栈)
@@ -91,6 +91,6 @@ display sys.argv
    - d (down, 下移一层调用栈)
 
 4. 帮助与退出
-   - h <topic> (help, 显示某个命令的帮助)
+   - h \<topic\> (help, 显示某个命令的帮助)
    - h pdb (help, 显示 pdb 的帮助)
    - q (quit, 退出调试)
