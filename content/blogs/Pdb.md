@@ -22,27 +22,27 @@ date =  2024-09-06T08:44:25+08:00
 
 ```python
 # 打印欢迎信息
-!import sys
-!print("Python version:", sys.version)
+# !import sys
+# !print("Python version:", sys.version)
 
 # Print a dictionary, sorted. %1 is the dict, %2 is the prefix for the names.
-alias p_ for k in sorted(%1.keys()): print(f"%2{k.ljust(max(len(s) for s in %1.keys()))} = {%1[k]}")
+# alias p_ for k in sorted(%1.keys()): print(f"%2{k.ljust(max(len(s) for s in %1.keys()))} = {%1[k]}")
 
 # Print the member variables of a thing.
-alias pi p_ %1.__dict__ %1.
+# alias pi p_ %1.__dict__ %1.
 
 # Print the member variables of self.
-alias ps pi self
+# alias ps pi self
 
 # Print the locals.
-alias pl p_ locals() local:
+# alias pl p_ locals() local:
 
 # Next and list, and step and list.
-alias nl n;;l
-alias sl s;;l
+# alias nl n;;l
+# alias sl s;;l
 
 # 设置自动显示的变量
-display sys.argv
+# display sys.argv
 
 # 设置断点, 仅 python -m pdb -c continue script.py 时生效
 # break my.py:5

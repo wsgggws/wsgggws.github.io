@@ -14,7 +14,7 @@ theme = 'paper'
 
 [params]
   # color style
-  color = 'linen'                           # linen, wheat, gray, light
+  color = 'wheat'                           # linen, wheat, gray, light
 
   # header social icons
   # github = ''                 # github.com/YOUR_GITHUB_ID
