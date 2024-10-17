@@ -1,9 +1,47 @@
 +++
-title = "Introduction"
-date = 2023-03-11T11:30:03+00:00
+title = "田海军"
+date = 2024-10-16T11:30:03+00:00
 +++
 
-- Name: Navy Tian
-- Email: <wsgggws@gmail.com>
+- 邮箱: <wsgggws@gmail.com>
 - GitHub: [wsgggws](https://github.com/wsgggws)
-- BiliBili: [Videos](https://space.bilibili.com/472722204)
+- BiliBili: [码码冇得空](https://space.bilibili.com/472722204)
+- 本科: 吉首大学 - 信息科学与技术 - 网络工程
+- 工作年限: 8年
+- 期望职位: 后端工程师 (Python/Go)
+
+## 个人简介
+
+后端工程师，专注于 API 设计与实现、数据抓取 (aiohttp) 和解析 (XPath, JmesPath)。熟练使用 Python 和 Go 开发高效、可扩展的 Web 应用程序，致力于通过完善的单元测试提升产品质量。擅长 CICD 自动化，提升开发效率，并热衷于解决复杂问题，通过数据驱动 (监控、告警) 为团队创造价值。
+
+## 工作经验
+
+### AfterShip (爱客科技（深圳）有限公司)
+
+2018年3月 - 2019年3月, 2020年8月 - 至今
+
+- API 开发与维护：负责 Couriers API 的开发与升级，确保高并发环境下的性能和稳定性。
+- 数据获取与解析：通过异步技术 (Tornado 和 aiohttp) 实现 trackings 数据的高效获取与解析，保障数据质量和合规性。
+- 监控与告警：设计并实现数据监控和告警规则，利用 New Relic 和 Grafana 进行性能分析，减少客户反馈的 Issues。
+
+技术挑战：
+
+- 每 3 小时更新 3200W+ 数据，确保数据完整性与合规性。
+- 实施 Rate Limiting 策略，避免对电商网站造成过高请求。
+- 统一全球 1000+ 电商快递追踪数据的 Schema。
+
+主要技术：Tornado, aiohttp, Pub/Sub, New Relic, Docker, Jenkins, PyTest, Mock, Locust, Grafana, Prometheus。
+
+### 云集科技有限公司
+
+2019年3月 - 2020年8月
+
+- CI/CD 可视化管理平台：设计并实现一个可视化的 CI/CD 管理平台，使用 Jenkins 和 GitLab 提升开发到测试环境的发布效率，支持团队快速迭代。
+- 动态数据监控系统：结合 Kafka 和 ELK，实时监控后端 API 性能，确保数据更新的及时性与准确性，提升系统可靠性与可维护性。
+
+### 北京至信普林科技有限公司
+
+2016年3月 - 2018年3月
+
+- 工商信息爬取系统：参与开发全国工商信息爬取系统，设计并实现高效的 API 接口，确保数据的高效获取与处理。
+- 数据处理流程：实施数据存储与清洗流程，提供结构化数据支持后续分析和业务需求，确保数据准确性与一致性。

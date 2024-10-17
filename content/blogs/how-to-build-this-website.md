@@ -37,7 +37,7 @@ git submodule add https://github.com/nanxiaobei/hugo-paper themes/paper
 ## Create a new posts
 
 ```
-hugo new posts blogs/title.md
+hugo new content blogs/title.md
 ```
 
 ## Observing locally website
