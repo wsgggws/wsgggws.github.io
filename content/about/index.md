@@ -1,8 +1,11 @@
 +++
-title = "田海军"
+title = "简历"
 date = 2024-10-16T11:30:03+00:00
 +++
 
+## 基本信息
+
+- 姓名: 田海军
 - 邮箱: <wsgggws@gmail.com>
 - GitHub: [wsgggws](https://github.com/wsgggws)
 - BiliBili: [码码冇得空](https://space.bilibili.com/472722204)
