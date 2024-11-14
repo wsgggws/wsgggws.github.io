@@ -3,16 +3,14 @@ title = "MacOS Tools"
 date = 2023-03-17T13:00:51+08:00
 +++
 
-## 为什么
-
-以下是我常使用的 MacOS 工具(App)，我并会对部分 App 进行说明，希望能在效率上帮助到你。
+这些是我常使用的 MacOS App，希望能帮助到你。
 如果你也有好的工具推荐，欢迎推荐。
 
 ## 常用工具
 
 |      软件       | 作用           |
 | :-------------: | :------------- |
-|   清歌输入法    | 五笔输入       |
+|    搜狗五笔     | 五笔输入       |
 |    Homebrew     | 软件包管理     |
 |     Chrome      | 搜索与网页浏览 |
 |     Raycast     | 效率神器       |
@@ -37,8 +35,9 @@ date = 2023-03-17T13:00:51+08:00
 |       fzf       | 模糊搜索文件   |
 |       bat       | cat 替代者     |
 |    mitmproxy    | 抓包工具       |
+|     BBDown      | B站下载工具    |
 
-### 清歌输入法
+### 搜狗五笔
 
 强烈建议删除 MacOS 自带的 ABC 输入法, 用清歌输入法，配置 shift 为中英文切换键，速度更快。
 
@@ -92,3 +91,7 @@ Yes, I like it. more details you can see: [https://github.com/wsgggws/nvim](http
 ### [mitmproxy](https://mitmproxy.org/)
 
 Charles, Fiddler 这些的替代品，值得拥有。
+
+### [BBDown](https://github.com/nilaoda/BBDown)
+
+一个命令行式哔哩哔哩下载器. Bilibili Downloader.
