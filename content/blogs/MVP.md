@@ -4,7 +4,7 @@ date = 2024-09-06T08:14:11+08:00
 tags = ["MVP", "Product Management", "Startup", "Methodology"]
 categories = ["Product"]
 summary = "Understanding Minimum Viable Product (MVP): Focus on key features and iterate fast."
-image = "/images/covers/MVP.png"
+image = "/images/covers/MVP.webp"
 +++
 
 **MVP (Minimum Viable Product)** 是一种产品开发策略，旨在用最小的成本开发出能满足核心需求的产品，并快速推向市场以验证想法。

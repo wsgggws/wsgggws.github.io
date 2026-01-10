@@ -4,7 +4,7 @@ date = 2024-08-23T17:50:18+08:00
 tags = ["HTTP", "API", "Debugging", "Tools"]
 categories = ["Tech", "Debugging"]
 summary = "How to use HttpBin to debug HTTP requests and inspect parameters."
-image = "/images/covers/httpbin.png"
+image = "/images/covers/httpbin.webp"
 +++
 
 **HttpBin** is a simple HTTP request & response service. It is incredibly useful when you need to verify if your HTTP client (curl, Python requests, Go http, etc.) is sending the data you expect.

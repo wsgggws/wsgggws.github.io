@@ -4,7 +4,7 @@ date = 2024-07-31T10:50:18+08:00
 tags = ["JSON", "CLI", "jq", "Data Processing"]
 categories = ["Tech", "Tools"]
 summary = "Introduction to jq, a lightweight and flexible command-line JSON processor."
-image = "/images/covers/jq.png"
+image = "/images/covers/jq.webp"
 +++
 
 **jq** is a lightweight and flexible command-line JSON processor. It is like `sed` for JSON data - you can use it to slice and filter and map and transform structured data with the same ease that `sed`, `awk`, `grep` and friends let you play with text.

@@ -4,7 +4,7 @@ date = 2024-09-06T08:44:25+08:00
 tags = ["Python", "Debugging", "Pdb"]
 categories = ["Tech"]
 summary = "A comprehensive guide to using Python's built-in debugger (pdb) for efficient error finding."
-image = "/images/covers/Pdb.png"
+image = "/images/covers/Pdb.webp"
 +++
 
 `ipdb` or `pdb` is the Python Interactive Debugger. It allows you to pause your program, inspect variables, and step through code line by line.

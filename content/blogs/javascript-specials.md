@@ -4,7 +4,7 @@ date = 2024-08-05T21:13:46+08:00
 tags = ["JavaScript", "Frontend", "Cheatsheet"]
 categories = ["Tech"]
 summary = "A quick reference specifically for JavaScript types, interactions, and operations."
-image = "/images/covers/javascript-specials.png"
+image = "/images/covers/javascript-specials.webp"
 +++
 
 ## 1. 变量声明 (Variable Declaration)

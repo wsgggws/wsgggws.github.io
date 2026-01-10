@@ -16,6 +16,14 @@ hasCJKLanguage = true
             icon = "home"
 
     [[menu.main]]
+        identifier = "archives"
+        name = "归档"
+        url = "/archives/"
+        weight = 3
+        [menu.main.params]
+            icon = "archives"
+
+    [[menu.main]]
         identifier = "about"
         name = "关于我"
         url = "/about/"
@@ -46,6 +54,10 @@ hasCJKLanguage = true
         
     [params.footer]
         since = 2020
+
+    [params.comments]
+        enabled = false
+        provider = "giscus"
 
     [params.widgets]
         [[params.widgets.homepage]]

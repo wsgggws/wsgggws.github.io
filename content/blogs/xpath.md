@@ -4,7 +4,7 @@ date = 2024-07-31T10:50:18+08:00
 tags = ["XPath", "XML", "HTML", "Parsing", "Web Scraping"]
 categories = ["Tech"]
 summary = "A quick reference guide for XPath syntax and expressions used in XML/HTML parsing."
-image = "/images/covers/xpath.png"
+image = "/images/covers/xpath.webp"
 +++
 
 XPath (XML Path Language) is a query language for selecting nodes from an XML document. It's widely used in web scraping (e.g., Selenium, Scrapy) to locate elements in HTML.

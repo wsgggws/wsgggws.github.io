@@ -4,7 +4,7 @@ date = 2023-03-17T13:00:51+08:00
 tags = ["MacOS", "Productivity", "Tools"]
 categories = ["Tech"]
 summary = "分享一些提升效率的 MacOS 常用软件和工具。"
-image = "/images/covers/macos-tools.png"
+image = "/images/covers/macos-tools.webp"
 +++
 
 这些是我常使用的 MacOS App，希望能帮助到你。
