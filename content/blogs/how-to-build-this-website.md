@@ -4,6 +4,7 @@ date = 2023-03-12T15:44:12+08:00
 tags = ["Start", "Hugo", "GitHub Actions", "Website"]
 categories = ["Tech"]
 summary = "A quick guide on how to build this website using Hugo and GitHub Actions."
+image = "/images/covers/how-to-build-this-website.png"
 +++
 
 This website is built with **Hugo**, a static site generator, and hosted on **GitHub Pages**. The deployment process is automated using **GitHub Actions**.

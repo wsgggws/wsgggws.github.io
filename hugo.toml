@@ -1,32 +1,70 @@
 baseURL = 'https://wsgggws.github.io/'
-languageCode = 'en-us'
+languageCode = 'zh-cn'
 title = 'Blogs (码码要洗手)'
-theme = 'paper'
+theme = 'hugo-theme-stack'
+# Default Content Language
+DefaultContentLanguage = "zh-cn"
+hasCJKLanguage = true
 
 [menu]
+    [[menu.main]]
+        identifier = "home"
+        name = "首页"
+        url = "/"
+        weight = 1
+        [menu.main.params]
+            icon = "home"
 
-  [[menu.main]]
-    identifier = "about"
-    name = "About.Me"
-    url = "/about/"
-    weight = 10
-
+    [[menu.main]]
+        identifier = "about"
+        name = "关于我"
+        url = "/about/"
+        weight = 2
+        [menu.main.params]
+            icon = "user"
 
 [params]
-  # color style
-  color = 'wheat'                           # linen, wheat, gray, light
+    mainSections = ["blogs"]
+    featuredImageField = "image"
+    favicon = "/images/website/Navy.ico"
+    rssFullContent = true
 
-  # header social icons
-  # github = ''                 # github.com/YOUR_GITHUB_ID
-  rss = true                                    # show rss icon
+    [params.sidebar]
+        emoji = "🍥"
+        subtitle = "" 
+        [params.sidebar.avatar]
+            enabled = true
+            local = false
+            src = "/images/website/Navy.ico"
 
-  # misc
-  disableHLJS = false                        # disable highlight.js
-  disablePostNavigation = false              # disable post navigation
-  monoDarkIcon = true                       # show monochrome dark mode icon
-  gravatarCdn = ''         # e.g. 'https://cdn.v2ex.com/gravatar/'
-  math = true                               # enable KaTeX math typesetting globally
-  localKatex = true                        # use local KaTeX js/css instead of CDN
-  graphCommentId = ""  # use graph comment (disqus alternative)
-  favicon = "/images/website/Navy.ico"                   # customize the default favicon
-  appleTouchIcon = "apple-touch-icon.png"   # customize the default Apple touch icon
+    [params.article]
+        math = true
+        toc = true
+        readingTime = true
+        [params.article.license]
+            enabled = false
+        
+    [params.footer]
+        since = 2020
+
+    [params.widgets]
+        [[params.widgets.homepage]]
+            type = "search"
+
+        [[params.widgets.homepage]]
+            type = "archives"
+            [params.widgets.homepage.params]
+                limit = 5
+
+        [[params.widgets.homepage]]
+            type = "categories"
+            [params.widgets.homepage.params]
+                limit = 10
+
+        [[params.widgets.homepage]]
+            type = "tag-cloud"
+            [params.widgets.homepage.params]
+                limit = 10
+
+        [[params.widgets.page]]
+            type = "toc"

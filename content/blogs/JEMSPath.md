@@ -4,6 +4,7 @@ date = 2024-08-01T10:50:18+08:00
 tags = ["JSON", "JMESPath", "Query Language", "Python"]
 categories = ["Tech", "Data"]
 summary = "Overview of JMESPath, a query language for JSON, and its usage in data extraction."
+image = "/images/covers/JEMSPath.png"
 +++
 
 **JMESPath** (pronounced "James path") is a query language for JSON. It allows you to declaratively specify how to extract elements from a JSON document.
