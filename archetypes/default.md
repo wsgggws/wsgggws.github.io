@@ -1,5 +1,8 @@
 +++
 title = "{{ replace .Name "-" " " | title }}"
-date =  {{ .Date }}
+date = {{ .Date }}
+tags = []
+categories = []
+summary = ""
 draft = false
 +++

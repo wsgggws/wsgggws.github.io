@@ -1,14 +1,69 @@
 +++
 title = "HttpBin"
-date =  2024-08-23T17:50:18+08:00
+date = 2024-08-23T17:50:18+08:00
+tags = ["HTTP", "API", "Debugging", "Tools"]
+categories = ["Tech", "Debugging"]
+summary = "How to use HttpBin to debug HTTP requests and inspect parameters."
 +++
 
-当你有 CURL 命令并且能够请求到数据，但请求参数复杂，例如 GET 请求参数里直接嵌套 xml 或者 json 数据。
-你使用 Python 或者 Go 语言进行改写，请求时却又发现请求参数不正确，这时候你可以使用 [httpbin](https://httpbin.org/) 进行调试。
+**HttpBin** is a simple HTTP request & response service. It is incredibly useful when you need to verify if your HTTP client (curl, Python requests, Go http, etc.) is sending the data you expect.
 
-- CULR 请求 <https://httpbin.org/get?xml={xml}>, 它会返回你的请求参数A
-- 代码里请求替换 URL 为 <https://httpbin.org/get?xml={xml}>, 它会返回你的请求参数B
+## Common Endpoints
 
-对比 A 和 B，你就能发现代码里请求参数的问题了。
+### 1. Inspect Request Data
+Verify headers, query params, and body.
 
-更多请求细节可查看 <https://httpbin.org/>
+*   `GET /get`: Returns GET arguments.
+*   `POST /post`: Returns POST data.
+*   `PUT /put`: Returns PUT data.
+
+**Example:**
+Check if your query parameters are encoded correctly.
+```bash
+curl "https://httpbin.org/get?name=navy&age=30"
+```
+Response:
+```json
+{
+  "args": {
+    "age": "30",
+    "name": "navy"
+  },
+  ...
+}
+```
+
+### 2. Inspect Headers
+Check if your custom headers are actually being sent.
+
+```bash
+curl -H "X-Custom-Header: value" https://httpbin.org/headers
+```
+
+### 3. Test Status Codes
+Check how your application handles different HTTP errors.
+
+*   `GET /status/:code`: Returns given HTTP Status code.
+
+```bash
+# Test 404 handling
+curl -I https://httpbin.org/status/404
+
+# Test 500 handling
+curl -I https://httpbin.org/status/500
+```
+
+### 4. Test Response Formats
+*   `GET /json`: Returns a simple JSON object.
+*   `GET /xml`: Returns a simple XML document.
+
+## Debugging Scenario
+
+Imagine you have a complex XML payload that fails on the production server. You can't see what the server receives.
+
+1.  **Change the URL**: Point your client to `https://httpbin.org/post`.
+2.  **Send Request**: Trigger the action in your app.
+3.  **Inspect Response**: HttpBin will echo back *exactly* what it received (headers, body content type, raw string).
+4.  **Compare**: You might find that your library added an extra wrapper or the encoding was wrong.
+
+Useful URL: <https://httpbin.org/>

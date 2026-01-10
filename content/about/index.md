@@ -1,6 +1,9 @@
 +++
 title = "简历"
 date = 2025-04-07T11:30:03+00:00
+tags = ["Resume", "About"]
+categories = ["About"]
+summary = "田海军的个人简历，Golang/Python 开发工程师。"
 +++
 
 # 田海军

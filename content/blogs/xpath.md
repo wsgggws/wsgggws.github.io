@@ -1,23 +1,58 @@
 +++
 title = "XPath"
 date = 2024-07-31T10:50:18+08:00
+tags = ["XPath", "XML", "HTML", "Parsing", "Web Scraping"]
+categories = ["Tech"]
+summary = "A quick reference guide for XPath syntax and expressions used in XML/HTML parsing."
 +++
 
-XPath(XML/HTML Path Language): Query language for XML/HTML.
+XPath (XML Path Language) is a query language for selecting nodes from an XML document. It's widely used in web scraping (e.g., Selenium, Scrapy) to locate elements in HTML.
 
 [视频解说点这里](https://www.bilibili.com/video/BV1Kd4y1R7Bt/)
 
-## XPath 表达式构成
+## XPath Syntax Cheat Sheet
 
-|  Component  |         Example         |
-| :---------: | :---------------------: |
-|   分隔符    |          /, //          |
-| 节点(标签)  |     div, tr, td ...     |
-| 节点(属性)  |     @class，@id ...     |
-| 节点(文本)  |  text()，comment() ...  |
-| 限定符/谓语 |           []            |
-|     轴      | following-sibling:: ... |
-|    函数     |    starts-with() ...    |
+| Component | Expression | Example | Description |
+| :--- | :--- | :--- | :--- |
+| **Node Selection** | `/` | `/html/body/div` | Selects from the root node. |
+| | `//` | `//div` | Selects nodes in the document from the current node that match the selection no matter where they are. |
+| | `.` | `./div` | Selects the current node. |
+| | `..` | `../div` | Selects the parent of the current node. |
+| **Attributes** | `@` | `//@href` | Selects attributes. |
+| **Predicates** | `[]` | `//div[@class='main']` | Filter expressions. |
+| **Wildcards** | `*` | `//*` | Matches any element node. |
+
+## Common Examples
+
+### Selecting Elements
+
+*   `//div`: Select all `div` elements.
+*   `//div/p`: Select all `p` elements that are children of `div`.
+*   `//div//p`: Select all `p` elements that are descendants of `div`.
+
+### Using Attributes
+
+*   `//div[@id='content']`: Select `div` with `id="content"`.
+*   `//a[@href='google.com']`: Select link pointing to google.
+*   `//input[@type='text']`: Select text input fields.
+
+### Functions
+
+*   `contains()`: `//div[contains(@class, 'nav')]` (Matches `class="main-nav"`)
+*   `starts-with()`: `//div[starts-with(@id, 'auth-')]`
+*   `text()`: `//button[text()='Submit']` (Exact match)
+*   `last()`: `//ul/li[last()]` (Select the last item)
+*   `position()`: `//ul/li[position() < 3]` (Select first two items)
+
+### Axes
+
+*   `//h1/following-sibling::p`: Select `p` elements after `h1`.
+*   `//p/parent::div`: Select the `div` parent of `p`.
+
+## Tools
+
+*   **Chrome DevTools**: `Cmd+F` in Elements tab supports XPath.
+*   **XPath Helper**: Chrome extension for testing XPath.
 |   操作符    |   and, or, >=, <= ...   |
 
 ## 如何使用 XPath

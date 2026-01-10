@@ -1,22 +1,62 @@
 +++
 title = "Python Debugger Pdb"
-date =  2024-09-06T08:44:25+08:00
+date = 2024-09-06T08:44:25+08:00
+tags = ["Python", "Debugging", "Pdb"]
+categories = ["Tech"]
+summary = "A comprehensive guide to using Python's built-in debugger (pdb) for efficient error finding."
 +++
 
-## 为什么要调试
+`ipdb` or `pdb` is the Python Interactive Debugger. It allows you to pause your program, inspect variables, and step through code line by line.
 
-- 更少的代码侵入
-- 更高效的错误定位
-- 更全面的信息查看
-- 条件断点 及 运行时反复修改变量值
+## 为什么要调试 (Why Debug?)
 
-## 如何开始调试
+*   **Print is not enough**: `print` 语句虽然简单，但对于复杂逻辑或循环，会产生大量干扰信息。
+*   **Interactive**: 可以在断点处动态修改变量值，测试不同的逻辑分支，而无需修改代码重启。
+*   **Context**: 查看函数调用栈 (Stack Trace)，知道“我是从哪里来的”。
 
-1. 添加 breakpoint() 行 (修改源文件)
+## 如何启动 (How to Start)
 
-2. python -m pdb script.py (不修改文件)
+1.  **修改代码式**: 在代码中插入断点。
+    ```python
+    import pdb; pdb.set_trace()
+    # Python 3.7+ can simply use:
+    breakpoint()
+    ```
 
-3. python -m pdb -c continue script.py (以 post-mortem 模式启动, 在异常发生时自动启动)
+2.  **命令行式**: 不修改代码，直接调试脚本。
+    ```bash
+    python -m pdb myscript.py
+    ```
+
+3.  **事后验尸 (Post-mortem)**: 程序崩溃后自动进入调试模式。
+    ```bash
+    python -m pdb -c continue myscript.py
+    ```
+
+## 常用命令清单 (Cheat Sheet)
+
+### Navigation (导航)
+*   **`n` (next)**: 执行下一行。遇到函数**不进入**。
+*   **`s` (step)**: 执行下一行。遇到函数**进入**内部。
+*   **`c` (continue)**: 继续执行，直到下一个断点。
+*   **`r` (return)**: 继续执行，直到当前函数返回。
+*   **`j` (jump)**: 跳转到指定行号 (如 `j 45`)。
+
+### Inspection (查看)
+*   **`l` (list)**: 显示当前执行行附近的代码。
+*   **`ll` (long list)**: 显示当前函数的全部代码。
+*   **`p variable` (print)**: 打印变量的值。
+*   **`pp variable` (pretty print)**: 美化打印（对字典/列表很有用）。
+*   **`w` (where)**: 打印堆栈跟踪 (Stack Trace)。
+
+### Control (控制)
+*   **`b` (break)**: 设置断点 (如 `b 20` 或 `b main.py:20`)。
+*   **`cl` (clear)**: 清除断点。
+*   **`disable/enable`**: 禁用/启用断点。
+*   **`q` (quit)**: 退出调试器。
+
+## Pro Tip
+推荐安装 **`ipdb`** (`pip install ipdb`)。它是 `pdb` 的增强版，支持语法高亮、Tab 自动补全，体验和 IPython 一样好。用法完全兼容。
 
 ## 调试交互命令
 
