@@ -1,2 +1,11 @@
 public/
 .DS_Store
+
+# Hugo default cache & generated files
+resources/
+.hugo_build.lock
+
+# Python env & cache
+.venv/
+__pycache__/
+*.py[cod]
