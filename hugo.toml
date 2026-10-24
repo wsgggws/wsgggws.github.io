@@ -34,7 +34,7 @@ hasCJKLanguage = true
 [params]
     mainSections = ["blogs"]
     featuredImageField = "image"
-    favicon = "/images/website/Navy.ico"
+    favicon = "images/website/Navy.ico"
     rssFullContent = true
 
     [params.sidebar]
@@ -43,7 +43,7 @@ hasCJKLanguage = true
         [params.sidebar.avatar]
             enabled = true
             local = false
-            src = "/images/website/Navy.ico"
+            src = "images/website/Navy.ico"
 
     [params.article]
         math = true

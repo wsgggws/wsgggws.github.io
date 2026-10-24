@@ -41,7 +41,7 @@ jobs:
       - name: Install Dart Sass
         run: sudo snap install dart-sass
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with:
           fetch-depth: 0
       - name: Setup Pages
@@ -64,6 +64,27 @@ jobs:
         with:
           path: ./public
 
+      - name: Build for navydev.top/blog
+        env:
+          HUGO_CACHEDIR: ${{ runner.temp }}/hugo_cache
+          HUGO_ENVIRONMENT: production
+          TZ: America/Los_Angeles
+        run: |
+          hugo \
+            --gc \
+            --minify \
+            --baseURL "https://navydev.top/blog/" \
+            --destination ./public-blog
+          mkdir -p release
+          tar -C public-blog -czf release/blog-site.tgz .
+
+      - name: Upload navydev blog artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: navydev-blog-site
+          path: release/blog-site.tgz
+          retention-days: 1
+
   # Deployment job
   deploy:
     environment:
@@ -75,3 +96,56 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
+  deploy-navydev:
+    needs: build
+    runs-on: ubuntu-latest
+    env:
+      DEPLOY_PATH: /var/www/navydev.top/blog
+      STAGING_PATH: /tmp/navydev.top-blog-${{ github.sha }}
+
+    steps:
+      - name: Download release
+        uses: actions/download-artifact@v4
+        with:
+          name: navydev-blog-site
+          path: release
+
+      - name: Setup SSH agent
+        uses: webfactory/ssh-agent@v0.10.0
+        with:
+          ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
+
+      - name: Add server to known hosts
+        run: |
+          mkdir -p ~/.ssh
+          ssh-keyscan -H ${{ secrets.REMOTE_IP }} >> ~/.ssh/known_hosts
+
+      - name: Create remote staging directory
+        run: |
+          ssh "${{ secrets.SSH_USER }}@${{ secrets.REMOTE_IP }}" \
+            "rm -rf '${STAGING_PATH}' && mkdir -p '${STAGING_PATH}'"
+
+      - name: Upload release
+        run: |
+          scp release/blog-site.tgz \
+            "${{ secrets.SSH_USER }}@${{ secrets.REMOTE_IP }}:${STAGING_PATH}/"
+
+      - name: Activate release
+        run: |
+          ssh "${{ secrets.SSH_USER }}@${{ secrets.REMOTE_IP }}" \
+            "DEPLOY_PATH='${DEPLOY_PATH}' STAGING_PATH='${STAGING_PATH}' bash -s" <<'EOF'
+            set -euo pipefail
+
+            SUDO=""
+            if [ "$(id -u)" -ne 0 ]; then
+              SUDO="sudo"
+            fi
+
+            release_dir="$(mktemp -d)"
+            tar -xzf "${STAGING_PATH}/blog-site.tgz" -C "${release_dir}"
+            ${SUDO} mkdir -p "${DEPLOY_PATH}"
+            ${SUDO} find "${DEPLOY_PATH}" -mindepth 1 -maxdepth 1 -exec rm -rf {} +
+            ${SUDO} cp -a "${release_dir}/." "${DEPLOY_PATH}/"
+            rm -rf "${release_dir}" "${STAGING_PATH}"
+          EOF

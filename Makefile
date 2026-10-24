@@ -1,4 +1,4 @@
-.PHONY: all dev build clean
+.PHONY: all dev build blog clean
 
 # Python executable
 PYTHON = .venv/bin/python
@@ -25,6 +25,10 @@ dev: images
 build: images
 	hugo --gc --minify
 
+# Build the same site for https://navydev.top/blog/
+blog: images
+	hugo --gc --minify --baseURL 'https://navydev.top/blog/' --destination public-blog
+
 # Clean build artifacts
 clean:
-	rm -rf public resources
+	rm -rf public public-blog resources

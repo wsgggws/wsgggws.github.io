@@ -11,7 +11,7 @@
             <figure class="site-avatar">
                 <a href="{{ .Site.BaseURL | relLangURL }}">
                 {{ if not .local }}
-                    <img src="{{ .src }}" width="300" height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    <img src="{{ .src | relURL }}" width="300" height="300" class="site-logo" loading="lazy" alt="Avatar">
                 {{ else }}
                     {{ $avatar := resources.Get (.src) }}
                     
