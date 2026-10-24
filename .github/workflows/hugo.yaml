@@ -71,6 +71,7 @@ jobs:
           TZ: America/Los_Angeles
         run: |
           hugo \
+            --config "hugo.toml,permalinks.navy.toml" \
             --gc \
             --minify \
             --baseURL "https://navydev.top/blog/" \

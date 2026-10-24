@@ -1,0 +1,3 @@
+# navydev.top/blog already provides the /blog prefix through --baseURL.
+[permalinks]
+    blogs = ":filename/"

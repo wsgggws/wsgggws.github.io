@@ -6,6 +6,9 @@ theme = 'hugo-theme-stack'
 DefaultContentLanguage = "zh-cn"
 hasCJKLanguage = true
 
+[permalinks]
+    blogs = "blog/:filename/"
+
 [menu]
     [[menu.main]]
         identifier = "home"

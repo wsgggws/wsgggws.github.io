@@ -27,7 +27,7 @@ build: images
 
 # Build the same site for https://navydev.top/blog/
 blog: images
-	hugo --gc --minify --baseURL 'https://navydev.top/blog/' --destination public-blog
+	hugo --config 'hugo.toml,permalinks.navy.toml' --gc --minify --baseURL 'https://navydev.top/blog/' --destination public-blog
 
 # Clean build artifacts
 clean:
