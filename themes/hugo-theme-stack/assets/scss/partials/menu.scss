@@ -1,3 +1,5 @@
+@use "../breakpoints";
+
 /*!
  * Hamburgers
  * @description Tasty CSS-animated hamburgers
@@ -111,7 +113,7 @@
         right: auto;
     }
 
-    @include respond(md) {
+    @include breakpoints.respond(md) {
         display: none;
     }
 
@@ -140,7 +142,7 @@
 
     padding: 30px 30px;
 
-    @include respond(xl) {
+    @include breakpoints.respond(xl) {
         padding: 15px 0;
     }
 
@@ -148,7 +150,7 @@
         flex-direction: column;
         gap: 30px;
 
-        @include respond(xl) {
+        @include breakpoints.respond(xl) {
             gap: 25px;
         }
     }
@@ -157,7 +159,7 @@
         display: flex;
     }
 
-    @include respond(md) {
+    @include breakpoints.respond(md) {
         align-items: flex-end;
         display: flex;
         background-color: transparent;
@@ -171,7 +173,7 @@
         vertical-align: middle;
         padding: 0;
 
-        @include respond(md) {
+        @include breakpoints.respond(md) {
             width: 100%;
         }
 

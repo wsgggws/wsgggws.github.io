@@ -1,5 +1,5 @@
 baseurl: https://example.com/
-languageCode: en-us
+locale: en-US
 theme: hugo-theme-stack
 title: Example Site
 copyright: Example Person

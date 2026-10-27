@@ -6,23 +6,23 @@
 *   @link: https://github.com/CaiJimmy/hugo-theme-stack
 */
 
-@import "breakpoints.scss";
-@import "variables.scss";
-@import "grid.scss";
+@use "breakpoints.scss";
+@use "variables.scss";
+@use "grid.scss";
 
-@import "external/normalize.scss";
+@use "external/normalize.scss";
 
-@import "partials/menu.scss";
-@import "partials/article.scss";
-@import "partials/widgets.scss";
-@import "partials/footer.scss";
-@import "partials/pagination.scss";
-@import "partials/sidebar.scss";
-@import "partials/base.scss";
-@import "partials/layout/article.scss";
-@import "partials/layout/list.scss";
-@import "partials/layout/404.scss";
-@import "partials/layout/search.scss";
+@use "partials/menu.scss";
+@use "partials/article.scss";
+@use "partials/widgets.scss";
+@use "partials/footer.scss";
+@use "partials/pagination.scss";
+@use "partials/sidebar.scss";
+@use "partials/base.scss";
+@use "partials/layout/article.scss" as article-layout;
+@use "partials/layout/list.scss";
+@use "partials/layout/404.scss" as error-page;
+@use "partials/layout/search.scss";
 
-@import "general.scss";
-@import "custom.scss";
+@use "general.scss";
+@use "custom.scss";

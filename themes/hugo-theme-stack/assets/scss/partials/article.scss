@@ -1,3 +1,5 @@
+@use "../breakpoints";
+
 /* Default article style */
 .article-list {
     display: flex;
@@ -24,11 +26,11 @@
                 height: 150px;
                 object-fit: cover;
 
-                @include respond(md) {
+                @include breakpoints.respond(md) {
                     height: 200px;
                 }
 
-                @include respond(xl) {
+                @include breakpoints.respond(xl) {
                     height: 250px;
                 }
             }
@@ -51,7 +53,7 @@
     color: var(--card-text-color-main);
     font-size: 2.2rem;
 
-    @include respond(xl) {
+    @include breakpoints.respond(xl) {
         font-size: 2.4rem;
     }
 
@@ -70,7 +72,7 @@
     line-height: 1.5;
     margin: 0;
     font-size: 1.75rem;
-    @include respond(xl) {
+    @include breakpoints.respond(xl) {
         font-size: 2rem;
     }
 }
@@ -146,7 +148,7 @@
     background-color: var(--card-background);
     --image-size: 50px;
 
-    @include respond(md) {
+    @include breakpoints.respond(md) {
         --image-size: 60px;
     }
 
@@ -173,7 +175,7 @@
             margin: 0;
             font-size: 1.6rem;
 
-            @include respond(md) {
+            @include breakpoints.respond(md) {
                 font-size: 1.8rem;
             }
         }
@@ -250,7 +252,7 @@
             z-index: 2;
             padding: 15px;
 
-            @include respond(sm) {
+            @include breakpoints.respond(sm) {
                 padding: 20px;
             }
         }
@@ -260,7 +262,7 @@
             font-weight: 500;
             color: var(--card-text-color-main);
 
-            @include respond(sm) {
+            @include breakpoints.respond(sm) {
                 font-size: 2.2rem;
             }
         }

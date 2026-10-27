@@ -35,7 +35,7 @@
 
     (function () {
         addEventListener("message", (e) => {
-            if (event.origin !== "https://giscus.app") return;
+            if (e.origin !== "https://giscus.app") return;
             handler();
         });
         window.addEventListener("onColorSchemeChange", handler);

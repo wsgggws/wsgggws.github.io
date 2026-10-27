@@ -1,6 +1,8 @@
+@use "../breakpoints";
+
 .sidebar {
     &.sticky {
-        @include respond(md) {
+        @include breakpoints.respond(md) {
             position: sticky;
         }
     }
@@ -21,14 +23,14 @@
     --emoji-size: 40px;
     --emoji-font-size: 20px;
 
-    @include respond(md) {
+    @include breakpoints.respond(md) {
         width: auto;
         padding-top: var(--main-top-padding);
         padding-bottom: var(--main-top-padding);
         max-height: 100vh;
     }
 
-    @include respond(2xl) {
+    @include breakpoints.respond(2xl) {
         --sidebar-avatar-size: 120px;
         --sidebar-element-separation: 25px;
         --emoji-size: 40px;
@@ -44,7 +46,7 @@
         --emoji-font-size: 15px;
 
         header {
-            @include respond(lg) {
+            @include breakpoints.respond(lg) {
                 flex-direction: row;
             }
 
@@ -55,7 +57,7 @@
             .site-name {
                 font-size: 1.4rem;
 
-                @include respond(2xl) {
+                @include breakpoints.respond(2xl) {
                     font-size: 1.75rem;
                 }
             }
@@ -77,7 +79,7 @@
         top: 0;
     }
 
-    @include respond(lg) {
+    @include breakpoints.respond(lg) {
         padding-top: var(--main-top-padding);
         padding-bottom: var(--main-top-padding);
     }
@@ -90,7 +92,7 @@
     flex-direction: column;
     gap: var(--sidebar-element-separation);
 
-    @include respond(md) {
+    @include breakpoints.respond(md) {
         padding: 0;
     }
 
@@ -135,7 +137,7 @@
         margin: 0;
         font-size: 1.6rem;
 
-        @include respond(2xl) {
+        @include breakpoints.respond(2xl) {
             font-size: 1.8rem;
         }
     }
@@ -146,7 +148,7 @@
         margin: 0;
         font-size: 1.4rem;
 
-        @include respond(2xl) {
+        @include breakpoints.respond(2xl) {
             font-size: 1.6rem;
         }
     }

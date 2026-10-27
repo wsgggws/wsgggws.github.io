@@ -1,8 +1,10 @@
+@use "../../breakpoints";
+
 .article-page {
     &.hide-sidebar-sm .left-sidebar {
         display: none;
 
-        @include respond(md) {
+        @include breakpoints.respond(md) {
             display: inherit;
         }
     }

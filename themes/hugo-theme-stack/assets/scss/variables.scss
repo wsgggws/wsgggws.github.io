@@ -1,3 +1,6 @@
+@use "sass:meta";
+@use "breakpoints";
+
 $defaultTagBackgrounds: #8ea885, #df7988, #0177b8, #ffb900, #6b69d6;
 $defaultTagColors: #fff, #fff, #fff, #fff, #fff;
 
@@ -7,7 +10,7 @@ $defaultTagColors: #fff, #fff, #fff, #fff, #fff;
 :root {
     --main-top-padding: 35px;
 
-    @include respond(xl) {
+    @include breakpoints.respond(xl) {
         --main-top-padding: 50px;
     }
 
@@ -61,17 +64,17 @@ $defaultTagColors: #fff, #fff, #fff, #fff, #fff;
 
     --card-padding: 20px;
 
-    @include respond(md) {
+    @include breakpoints.respond(md) {
         --card-padding: 25px;
     }
 
-    @include respond(xl) {
+    @include breakpoints.respond(xl) {
         --card-padding: 30px;
     }
 
     --small-card-padding: 25px 20px;
 
-    @include respond(md) {
+    @include breakpoints.respond(md) {
         --small-card-padding: 25px;
     }
 
@@ -92,7 +95,7 @@ $defaultTagColors: #fff, #fff, #fff, #fff, #fff;
     --article-font-family: var(--base-font-family);
     --article-font-size: 1.6rem;
 
-    @include respond(md) {
+    @include breakpoints.respond(md) {
         --article-font-size: 1.7rem;
     }
 
@@ -149,13 +152,13 @@ $defaultTagColors: #fff, #fff, #fff, #fff, #fff;
 [data-scheme="light"] {
     --pre-text-color: #272822;
     --pre-background-color: #fafafa;
-    @import "partials/highlight/light.scss";
+    @include meta.load-css("partials/highlight/light.scss");
 }
 
 [data-scheme="dark"] {
     --pre-text-color: #f8f8f2;
     --pre-background-color: #272822;
-    @import "partials/highlight/dark.scss";
+    @include meta.load-css("partials/highlight/dark.scss");
 }
 
 :root {

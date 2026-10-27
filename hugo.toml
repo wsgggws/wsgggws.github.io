@@ -1,5 +1,5 @@
 baseURL = 'https://wsgggws.github.io/'
-languageCode = 'zh-cn'
+locale = 'zh-CN'
 title = 'Blogs (码码要洗手)'
 theme = 'hugo-theme-stack'
 # Default Content Language
@@ -41,7 +41,7 @@ hasCJKLanguage = true
     rssFullContent = true
 
     [params.sidebar]
-        emoji = "🍥"
+        emoji = ""
         subtitle = "" 
         [params.sidebar.avatar]
             enabled = true
@@ -59,8 +59,23 @@ hasCJKLanguage = true
         since = 2020
 
     [params.comments]
-        enabled = false
+        enabled = true
         provider = "giscus"
+
+        [params.comments.giscus]
+            repo = "wsgggws/wsgggws.github.io"
+            repoID = "R_kgDOJIbZng"
+            category = "Announcements"
+            categoryID = "DIC_kwDOJIbZns4DJvJM"
+            mapping = "pathname"
+            strict = 1
+            reactionsEnabled = 1
+            emitMetadata = 0
+            inputPosition = "top"
+            lightTheme = "light"
+            darkTheme = "dark_dimmed"
+            lang = "zh-CN"
+            loading = "lazy"
 
     [params.widgets]
         [[params.widgets.homepage]]

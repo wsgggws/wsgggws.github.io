@@ -1,3 +1,5 @@
+@use "common";
+
 /*
 *   Style: monokailight
 *   https://xyproto.github.io/splash/docs/monokailight.html
@@ -11,4 +13,4 @@ $text-color: #111111;
 $name-color: #75af00;
 $literal-color: #d88200;
 
-@import "common.scss";
+@include common.theme($color, $background-color, $error-color, $keyword-color, $text-color, $name-color, $literal-color);
